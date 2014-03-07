@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/security
+http://www.springframework.org/schema/security/spring-security-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.founder.rbac.*" />
+	<security:http auto-config="false" access-denied-page="/403.jsp" use-expressions="true">
+		<security:form-login login-page='/login/access'
+			default-target-url="/login/home" always-use-default-target="true" authentication-failure-url="/login/access" />   <!-- login-processing-url="/login/check" -->
+		<security:logout invalidate-session="true"
+			logout-success-url="/login/access" />
+		<security:custom-filter ref="authenticationFilter"
+			before="FILTER_SECURITY_INTERCEPTOR" />
+		<!-- <security:custom-filter ref="logoutFilter" before="LOGOUT_FILTER"/> -->
+	</security:http>
+
+	<!-- 注意能够为authentication-manager 设置alias别名 -->
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider
+			user-service-ref="userService">
+			<security:password-encoder hash="md5"></security:password-encoder>
+			<!-- <security:authentication-manager ref="passwordEncoder"> <security:authentication-manager 
+				user-property="username" /> -->
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+	<bean id="accessDecisionManager"
+		class="org.springframework.security.access.vote.AffirmativeBased">
+		<property name="decisionVoters">
+			<list>
+				<bean class="org.springframework.security.access.vote.RoleVoter">
+					<property name="rolePrefix" value=""></property>
+				</bean>
+				<bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+			</list>
+		</property>
+	</bean>
+	<bean id="authenticationFilter"
+		class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="filterProcessesUrl" value="/login/check" />
+		<property name="usernameParameter" value="username" />
+		<property name="passwordParameter" value="password" />
+		<property name="authenticationSuccessHandler" ref="mySuccessHandler" />
+		<property name="authenticationFailureHandler" ref="myfailureHandler" />
+	</bean>
+	<bean id="myfailureHandler"
+		class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+		<property name="defaultFailureUrl" value="/login/access" />
+	</bean>
+	<bean id="mySuccessHandler"
+		class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+		<property name="defaultTargetUrl" value="/login/home" />
+		<property name="alwaysUseDefaultTargetUrl" value="true" />
+	</bean>
+
+	<!-- <bean id="logoutFilter"
+		class="org.springframework.security.web.authentication.logout.LogoutFilter">
+		<constructor-arg value="/login/logout" />
+		<constructor-arg>
+			<bean
+				class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+		</constructor-arg>
+		<property name="filterProcessesUrl" value="/j_spring_cas_security_logout" />
+	</bean> -->
+	<!-- <bean id="md5Encoder" class="org.ourpioneer.board.util.MD5Encoder" 
+		/> -->
+	<!-- 用户详细信息管理：数据源、用户缓存（通过数据库管理用户、角色、权限、资源）。 -->
+	<!-- <bean id="userDetailsManager" class="com.founder.rbac.service.UserDetailsServiceImpl" 
+		/> -->
+	<!-- <security:http access-decision-manager-ref="accessDecisionManager"> 
+		<security:intercept-url pattern="/messageList.htm" access="ROLE_ADMIN,ROLE_USER,ROLE_GUEST" 
+		/> <security:intercept-url pattern="/messagePost.htm" access="ROLE_USER" 
+		/> <security:intercept-url pattern="/messageDelete.htm" access="ROLE_ADMIN,IP_LOCAL_HOST" 
+		/> <security:form-login login-page="/login.jsp" login-processing-url="/login" 
+		default-target-url="/messageList.htm" authentication-failure-url="/login.jsp?error=true" 
+		/> <security:logout logout-success-url="/login.jsp" /> -->
+	<!-- <security:anonymous username="guest" -->
+	<!-- granted-authority="ROLE_GUEST" /> -->
+	<!-- <security:authentication-manager> <security:authentication-provider> 
+		<security:user-service> <security:user name="aaa" authorities="ROLE_ADMIN,ROLE_A,A" 
+		password="123" /> <security:user name="user1" authorities="ROLE_USER" password="1111" 
+		/> </security:user-service> </security:authentication-provider> </security:authentication-manager> -->
+	<!-- <security:authentication-manager> <security:authentication-provider> 
+		<security:user-service> <security:jdbc-user-service data-source-ref="dataSource" 
+		users-by-username-query="SELECT LOGIN_NAME AS USERNAME,PASSWORD,STATUS AS 
+		ENABLED FROM USERS WHERE LOGIN_NAME=?" authorities-by-username-query="SELECT 
+		U.LOGIN_NAME AS USERNAME,RA.ACCESS_CODE AS AUTHORITIES FROM USERS U,USER_ROLE 
+		UR,ROLE R,ROLE_ACCESS RA WHERE U.LOGIN_NAME=? AND U.ID=UR.USER_ID AND UR.ROLE_ID= 
+		R.ID AND UR.POWER=1 AND R.CODE=RA.ROLE_CODE" /> </security:authentication-provider> 
+		</security:authentication-manager> -->
+
+</beans>

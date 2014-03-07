@@ -1,0 +1,190 @@
+/*CSS reset*/
+#search_form body, #search_form div, #search_form dl, #search_form dt, #search_form dd, #search_form ul, #search_form ol, #search_form li, 
+#search_form h1, #search_form h2, #search_form h3, #search_form h4, #search_form h5, #search_form h6, #search_form pre, #search_form form, 
+#search_form fieldset, #search_form input, #search_form textarea, #search_form p, #search_form blockquote, #search_form th, #search_form td {
+    margin: 0;
+    padding: 0;
+}
+
+#search_form table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#search_form th {
+    font-weight: normal;
+}
+
+#search_form address, #search_form caption, #search_form cite, #search_form code, #search_form dfn, #search_form em, #search_form strong, #search_form th, #search_form var {
+    font-style: normal;
+}
+
+#search_form ol, #search_form ul {
+    list-style: none;
+}
+
+#search_form caption {
+    text-align: left;
+}
+
+#search_form h1, #search_form h2, #search_form h3, #search_form h4, #search_form h5, #search_form h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+#search_form q:before, #search_form q:after {
+    content: '';
+}
+
+#search_form abbr, #search_form acronym, #search_form fieldset, #search_form img, #search_form input, #search_form button {
+    border: none;
+}
+
+#search_form input:focus, #search_form select:focus, #search_formtextarea:focus {
+    outline: none;
+}
+
+#search_form textarea {
+    resize: none;
+    border: solid 1px #dadada;
+    padding: 2px 0;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 2px;
+}
+
+#search_form a, #search_form a:link, #search_form a:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+#search_form a:hover {
+    color: #000;
+    text-shadow: #ccc 0 1px; /*文字阴影效果 IE9+ & Other*/
+    /*text-shadow: skyblue 0 0 0  4px;*/
+}
+
+#search_form select {
+    border: 1px solid #DADADA;
+    width: 172px;
+    height: 28px;
+    color: #737373;
+}
+
+#search_form table, #search_form caption, #search_form .pages {
+    background-color: #f8f8f8;
+}
+
+#search_form table, #search_form td, #search_form th, #search_form tr {
+    border: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+#search_form caption {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+}
+
+#search_form th {
+    background: transparent;
+    border-bottom: none;
+    border-top: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 1.5;
+    text-align: right;
+}
+#search_form td {
+    text-align: left;
+}
+
+#search_form th, #search_form td {
+    padding: 0 8px;
+}
+
+#search_form td {
+    height: 40px;
+    line-height: 1.5;
+}
+
+/*treeview.css*/
+#search_form #treediv {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 180px;
+    height: 240px;
+    padding: 5px;
+    background: #F8FDFF;
+    color: #000000;
+    border: 1px solid #c3daf9;
+}
+
+#search_form #treediv_code {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 180px;
+    height: 240px;
+    padding: 5px;
+    background: #F8FDFF;
+    color: #000000;
+    border: 1px solid #c3daf9;
+}
+
+#search_form #treeContent {
+    float: left;
+    background-color: #fff;
+    border-bottom: #c3daf9 1px solid;
+    border-left: #c3daf9 1px solid;
+    width: 250px;
+    height: 500px;
+    overflow: auto;
+    border-top: #c3daf9 1px solid;
+    border-right: #c3daf9 1px solid;
+}
+
+#search_form #treeMessage {
+    text-align: center;
+    background: url("http://id3.idqqimg.com/zc/chs/img/right.png") no-repeat scroll right top #F8FDFF;
+    border-bottom: 1px solid #D6D9DB;
+    border-top: 1px solid #80ADD9;
+    height: 500px;
+}
+
+#search_form #treeMessage .mMessage {
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    text-align: center;
+}
+
+#search_form .loading {
+    width: 99.4%;
+    height: 99%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+}
+
+#search_form .loading img {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+#search_form #tableStyle a:hover{
+    text-decoration: underline;
+}
+
+
+#search_form thead th:hover, #search_form thead .tr:hover {
+    border-bottom: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}

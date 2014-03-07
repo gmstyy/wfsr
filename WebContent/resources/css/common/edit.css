@@ -1,0 +1,46 @@
+.chooseFromTree {
+	position: absolute;
+	border: darkgray solid 1px;
+	background-color: #ffffff;
+	padding: 10px;
+	width: 250px;
+	display: none;
+}
+.chooseFromTree .folder {
+	float: left;
+	color: black;
+	/*cursor: pointer;*/
+}
+.chooseFromTree ul {
+	margin: 5px;
+	padding-left: 25px;
+}
+.chooseFromTree li {
+	list-style: none;
+	font-size: 10pt;
+	color: blue;
+}
+#editContainer {
+	color: #444444;
+}
+.role_list {
+	text-align: left;
+}
+.role_list li {
+	display: inline;
+    text-decoration: none;
+    margin: auto 3px;
+}
+.roles_power {
+	
+}
+.roles_power .edit_section {
+	background-color: #FFF;
+}
+.roles_power li {
+	margin: 3px;
+	text-align: center;
+}
+.roles_power fieldset {
+	border: 1px Solid Black;
+}

@@ -1,0 +1,88 @@
+/* 管理相对人 */
+.orgLicenseDiv {
+	float: none;
+}
+/* 许可类型 */
+.license_list {
+	float: left;
+}
+.license_list:after {
+	clear: both;
+}
+.license_item {
+	float: left;
+	list-style: none;
+	width: 80px;
+	margin: 10px;
+}
+.license_item * {
+	float: left;
+}
+.license_item a {
+    height: 80px;
+    width: 80px;
+}
+.license_item div {
+	font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.license_item div:hover {
+	text-decoration: underline;
+}
+.small_license_list {
+	float: left;
+}
+.small_license_list .license_item {
+	width: 60px;
+	margin: 3px;
+}
+.small_license_list .license_item a {
+    height: 50px;
+    width: 50px;
+}
+.small_license_list .license_item div {
+	font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+/* 建设项目 */
+.license_type_1 {
+	background: url("../images/business/xx.png") no-repeat center center;
+}
+/* 公共场所 */
+.license_type_2 {
+	background: url("../images/business/ggcs.png") no-repeat center center;
+}
+/* 生活饮用水  */
+.license_type_3 {
+	background: url("../images/business/shyys.png") no-repeat center center;
+}
+/* 餐饮 */
+.license_type_4 {
+	background: url("../images/business/cy.png") no-repeat center center;
+}
+/* 放射 */
+.license_type_5 {
+	background: url("../images/business/fs.png") no-repeat center center;
+}
+/* 医疗广告 */
+.license_type_6 {
+	background: url("../images/business/ylgg.png") no-repeat center center;
+}
+/* 病原运输 */
+.license_type_7 {
+	background: url("../images/business/byys.png") no-repeat center center;
+}
+/* 医师资格 */
+.license_type_8 {
+	background: url("../images/business/yszg.png") no-repeat center center;
+}
+/* 食盐 */
+.license_type_9 {
+	background: url("../images/business/sy.png") no-repeat center center;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<import resource="classpath:org/codehaus/xfire/spring/xfire.xml" />
+	<bean id="OAZsyServiceBean" class="com.founder.oa.service.WsZsyServiceImpl" />
+  
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">             
+            <map>                 
+               <entry key="/oaService.zsy">                  
+                   <ref bean="OAZsyService" />                 
+               </entry>
+            </map>         
+        </property>     
+     </bean>     
+	
+	<!-- 使用XFire导出器 -->
+	<bean id="baseWebService"
+		class="org.codehaus.xfire.spring.remoting.XFireExporter" lazy-init="false" abstract="true">
+		<!-- 引用xfire.xml中定义的工厂 -->
+		<property name="serviceFactory" ref="xfire.serviceFactory" />
+		<!-- 引用xfire.xml中的xfire实例 -->
+		<property name="xfire" ref="xfire" />
+	</bean>
+	<bean id="OAZsyService" parent="baseWebService">
+		<property name="serviceBean" ref="OAZsyServiceBean" />
+		<property name="serviceClass" value="com.founder.oa.service.IWsZsyService" />
+	</bean>
+
+</beans>

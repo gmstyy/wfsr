@@ -1,0 +1,173 @@
+#tree_container {
+	background-color: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px 3px 3px 3px;
+    margin: 3px 3px 6px 3px;
+    float: left;
+    width: 200px;
+}
+#search_container, #list_container {
+	background-color: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px 3px 3px 3px;
+    margin: 3px 3px 6px 3px;
+}
+#search_container {
+	padding: 5px 0 0;
+}
+#searchTable {
+}
+#searchTable select {
+	border: 1px solid #DADADA;
+    border-radius: 2px 2px 2px 2px;
+    height: 28px;
+    line-height: 28px;
+    padding: 4px 0;
+    width: 160px;
+}
+#searchTable select:focus {
+	border: 1px solid #FF9900;
+}
+#searchTable input {
+	width: 20px;
+}
+#searchTable input {
+	width: expression(this.type=="text"?"160px":"style");
+}
+#searchTable input[type="text"] {
+	color: #999999;
+	border: 1px solid #DADADA;
+    border-radius: 2px 2px 2px 2px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    width: 160px;
+}
+#searchTable input[class="date_input"] {
+    width: 105px;
+}
+#searchTable input[type="text"]:focus {
+	border: 1px solid #FF9900;
+}
+#searchTable th {
+	font-weight: normal;
+	text-align: right;
+}
+.repeattable {
+	width: 100%;
+	padding: auto 1px;
+	background-color: #DDDDDD;
+	border-spacing: 1px;
+	border-spacing: expression(this.cellSpacing=1);
+}
+.repeattable caption {
+	text-align: left;
+	width: 100%;
+	line-height: 40px;
+	border-bottom: Solid 1px #2383BD;
+}
+.repeattable caption a:hover {
+	text-decoration: underline;
+    color: #000000;
+}
+.repeattable .row_header {
+	background-color: #EFEFEF;
+    border-bottom: 1px solid #BBBBBB;
+    height: 28px;
+	line-height: 28px;
+    text-align: center;
+}
+.repeattable tbody tr {
+	
+}
+.repeattable tbody tr:hover {
+	background-color: #EEEEEE;
+}
+.repeattable .row_odd {
+	background-color: #F8F8F8;
+}
+.repeattable .row_even {
+	background-color: #FFFFFF;
+}
+.repeattable td {
+	padding: 6px;
+}
+#pagenation {
+	line-height: 40px;
+	font-size: 14px;
+}
+#pagenation span {
+}
+#pagenation .current_page {
+	margin: auto 10px;
+}
+#pagenation .change_page {
+	cursor: pointer;
+	margin: auto 10px;
+}
+#pagenation .change_page:hover {
+	text-decoration: underline;
+}
+.option_container {
+	
+}
+a:hover {
+	text-decoration: underline;
+    color: #000000;
+}
+.formtable {
+}
+.edittable {
+	margin: 10px auto;
+	width: 100%;
+}
+.edittable select {
+	width: 157px;
+}
+.edittable input {
+	width: 20px;
+}
+.edittable input {
+	width: expression(this.type=="text" || this.type=="password" ? "150px" : "style");
+}
+.edittable input[type="text"], .edittable input[type="password"] {
+	width: 150px;
+}
+.edittable th {
+	text-align: right;
+	padding-right: 4px;
+}
+.edittable td {
+	text-align: left;
+}
+.edittable .must_field {
+	color: #FF0000;
+	margin-right: -4px;
+}
+.edit_section {
+	float: left;
+	width: 50%;
+}
+.edit_section .title {
+	text-align: left;
+	font-weight: bold;
+	padding: 10px;
+}
+.edit_section fieldset {
+	margin: 10px;
+}
+.dic_select {
+	background-image: url("../../images/table-icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 -88px;
+	vertical-align: middle;
+    height: 23px;
+    width: 23px;
+    text-decoration: none;
+    color: #555555;
+    display: inline-block;
+    cursor: pointer;
+}
+.validate_error {
+	background-color: #FFFF00;
+}

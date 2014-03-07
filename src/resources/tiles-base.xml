@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<!-- Definitions for Tiles documentation   -->
+
+<tiles-definitions>
+	
+	<!-- 登录页面 -->
+	<definition name="login" template="/login.jsp"/>
+	<definition name="login2" template="/login2.jsp"/>
+	
+	<!-- 错误页面 -->
+	<definition name="oa.403" template="/403.jsp"/>
+	<definition name="oa.404" template="/404.jsp"/>
+	<definition name="oa.error" template="/error.jsp"/>
+	
+	<!-- 数据同步 -->
+	<definition name="oa.sync.out.index" template="/WEB-INF/views/system/sync/out/index.jsp"/>
+	<definition name="oa.sync.out.view" template="/WEB-INF/views/system/sync/out/view.jsp"/>
+	<definition name="oa.sync.in.index" template="/WEB-INF/views/system/sync/in/index.jsp"/>
+	
+    <!-- OA首页 -->
+	<definition name="oa.home" template="/WEB-INF/views/layout/base_layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="topmenu" value="/WEB-INF/views/layout/top_menu.jsp" />
+	</definition>
+	
+	<!-- 个人首页 -->
+	<definition name="oa.home.index" template="/WEB-INF/views/oa/home/index.jsp"/>
+	<definition name="oa.home.switchDepartment" template="/WEB-INF/views/common/switchDepartment.jsp"/>
+	<definition name="oa.home.myInformation" template="/WEB-INF/views/common/myInformation.jsp"/>
+	
+	<!-- 角色管理 -->
+	<definition name="rbac.role.index" template="/WEB-INF/views/rbac/role/index.jsp"/>
+	<definition name="rbac.role.batchSetAccess" template="/WEB-INF/views/rbac/role/batchSetAccess.jsp"/>
+	<definition name="rbac.role.add" template="/WEB-INF/views/rbac/role/add.jsp"/>
+	<definition name="rbac.role.update" template="/WEB-INF/views/rbac/role/update.jsp"/>
+	<definition name="rbac.role.custom.index" template="/WEB-INF/views/rbac/role/customIndex.jsp"/>
+	<definition name="rbac.role.customConfirm" template="/WEB-INF/views/rbac/role/customConfirm.jsp"/>
+	
+	<!-- 用户管理 -->
+	<definition name="rbac.user.index" template="/WEB-INF/views/rbac/user/index.jsp"/>
+	<definition name="rbac.user.batchSetRole" template="/WEB-INF/views/rbac/user/batchSetRole.jsp"/>
+	<definition name="rbac.user.add" template="/WEB-INF/views/rbac/user/add.jsp"/>
+	<definition name="rbac.user.update" template="/WEB-INF/views/rbac/user/update.jsp"/>
+	<definition name="rbac.user.changePassword" template="/WEB-INF/views/rbac/user/changepwd.jsp"/>
+	<definition name="rbac.user.roleSet" template="/WEB-INF/views/rbac/user/roleSet.jsp"/>
+	<definition name="rbac.user.updateDept" template="/WEB-INF/views/rbac/user/updateDept.jsp"></definition>
+	
+	<!-- 系统配置 -->
+	<definition name="system.config.index" template="/WEB-INF/views/system/config/index.jsp"/>
+	<definition name="system.config.add" template="/WEB-INF/views/system/config/add.jsp"/>
+	<definition name="system.config.update" template="/WEB-INF/views/system/config/update.jsp"/>
+	
+	<!-- 数据导入 -->
+	<definition name="system.import.index" template="/WEB-INF/views/system/dataImport/index.jsp"/>
+	<definition name="system.import.add" template="/WEB-INF/views/system/dataImport/edit.jsp"/>
+	<definition name="system.import.update" template="/WEB-INF/views/system/dataImport/edit.jsp"/>
+	<!-- 报表配置 -->
+	<definition name="statistics.config.index" template="/WEB-INF/views/statistics/index.jsp"/>
+	<definition name="statistics.config.add" template="/WEB-INF/views/statistics/edit.jsp"/>
+	<definition name="statistics.config.update" template="/WEB-INF/views/statistics/edit.jsp"/>
+	<definition name="statistics.config.run" template="/WEB-INF/views/statistics/run.jsp"/>
+	<!-- 定时任务配置 -->
+	<definition name="timedTask.config.index" template="/WEB-INF/views/system/timedTask/index.jsp"/>
+	<definition name="timedTask.config.add" template="/WEB-INF/views/system/timedTask/edit.jsp"/>
+	<definition name="timedTask.config.update" template="/WEB-INF/views/system/timedTask/edit.jsp"/>
+	<!-- 系统日志 -->
+	<definition name="system.logs.index" template="/WEB-INF/views/system/logs/index.jsp"/>
+	
+	<!-- 系统菜单 -->
+	<definition name="system.menu.index" template="/WEB-INF/views/system/menu/index.jsp"/>
+	<definition name="system.menu.update" template="/WEB-INF/views/system/menu/edit.jsp"/>
+	
+	
+	<!-- 通用字典 -->
+	<definition name="dictionary.organization.index" template="/WEB-INF/views/common/dictionary/organization.jsp"/>
+	<definition name="dictionary.department.index" template="/WEB-INF/views/common/dictionary/department.jsp"/>
+	<definition name="dictionary.employee.index" template="/WEB-INF/views/common/dictionary/employee.jsp"/>
+	<definition name="dictionary.employeeTree.index" template="/WEB-INF/views/common/dictionary/employeeTree.jsp"/>
+	<definition name="dictionary.role.index" template="/WEB-INF/views/common/dictionary/role.jsp"/>
+	<definition name="dictionary.relativePerson.index" template="/WEB-INF/views/common/dictionary/relativePerson.jsp"/>
+	<definition name="dictionary.dictionary.index" template="/WEB-INF/views/common/dictionary/dictionary.jsp"/>
+	
+	<!-- 文件上传 -->
+	<definition name="common.fileUpload.response" template="/WEB-INF/views/common/fileUpload.jsp"/>
+	
+	<!-- 机构管理 -->
+	<definition name="org.org.index" template="/WEB-INF/views/org/org/index.jsp"/>
+	<definition name="org.org.edit" template="/WEB-INF/views/org/org/edit.jsp"/>
+	
+	<!-- 科室管理 -->
+	<definition name="org.department.index" template="/WEB-INF/views/org/department/index.jsp"/>
+	<definition name="org.department.edit" template="/WEB-INF/views/org/department/edit.jsp"/>
+	
+	<!-- 人员管理 -->
+	<definition name="org.employee.index" template="/WEB-INF/views/org/employee/index.jsp"/>
+	<definition name="org.employee.edit" template="/WEB-INF/views/org/employee/edit.jsp"/>
+	<definition name="org.employee.editEducation" template="/WEB-INF/views/org/employee/edit_education.jsp"></definition>
+	<definition name="org.employee.editExperience" template="/WEB-INF/views/org/employee/edit_experience.jsp"></definition>
+	<definition name="org.employee.editFamily" template="/WEB-INF/views/org/employee/edit_family.jsp"></definition>
+	
+	<definition name="workflow.index" template="/WEB-INF/views/oa/workflow/index.jsp"/>
+	<definition name="workflow.edit" template="/WEB-INF/views/oa/workflow/edit.jsp"/>
+	<definition name="workflow.set" template="/WEB-INF/views/oa/workflow/set.jsp"/>
+	<definition name="workflow.view" template="/WEB-INF/views/oa/workflow/view.jsp"/>
+	
+	<definition name="approve.index" template="/WEB-INF/views/oa/approve/index.jsp"/>
+	<definition name="approve.edit" template="/WEB-INF/views/oa/approve/edit.jsp"/>
+	<definition name="approve.choose" template="/WEB-INF/views/oa/approve/choose.jsp"/>
+	<definition name="approve.list" template="/WEB-INF/views/oa/approve/list.jsp"/>
+	<definition name="approve.detail" template="/WEB-INF/views/oa/approve/detail.jsp"/>
+	<!-- 管理相对人 -->
+	<definition name="oa.relativePerson.index" template="/WEB-INF/views/app/relativePerson/index.jsp"/>
+	<definition name="oa.relativePerson.edit" template="/WEB-INF/views/app/relativePerson/edit.jsp"/>
+	<!-- 许可 -->
+	<definition name="oa.app.orgLicense" template="/WEB-INF/views/app/orgLicense.jsp"/>
+	<definition name="oa.app.index" template="/WEB-INF/views/app/index.jsp"/>
+	<definition name="oa.app.apply" template="/WEB-INF/views/app/apply.jsp"/>
+	<definition name="oa.app.applyEdit" template="/WEB-INF/views/app/applyEdit.jsp"/>
+	<definition name="oa.app.applyView" template="/WEB-INF/views/app/applyView.jsp"/>
+	<definition name="oa.app.accept" template="/WEB-INF/views/app/accept.jsp"/>
+	<definition name="oa.app.report" template="/WEB-INF/views/app/report.jsp"/>
+	<definition name="oa.app.print" template="/WEB-INF/views/app/print.jsp"/>
+	<definition name="oa.app.issue" template="/WEB-INF/views/app/issue.jsp"/>
+	<definition name="oa.app.statistics" template="/WEB-INF/views/statistics/app/index.jsp"/>
+	<definition name="oa.app.manage" template="/WEB-INF/views/app/manage.jsp"/>
+	<definition name="oa.app.construction.add" template="/WEB-INF/views/app/construction/edit.jsp"/>
+	<definition name="oa.app.public.add" template="/WEB-INF/views/app/public/edit.jsp"/>
+	<definition name="oa.app.radiate.add" template="/WEB-INF/views/app/radiate/edit.jsp"/>
+	<definition name="oa.app.restaurant.add" template="/WEB-INF/views/app/restaurant/edit.jsp"/>
+	<definition name="oa.app.water.add" template="/WEB-INF/views/app/water/edit.jsp"/>
+	<definition name="oa.app.ad.edit" template="/WEB-INF/views/app/ad/edit.jsp"/>
+	<definition name="oa.app.doctor.edit" template="/WEB-INF/views/app/doctor/edit.jsp"/>
+	<definition name="oa.app.transportation.edit" template="/WEB-INF/views/app/transportation/edit.jsp"/>
+	<definition name="oa.app.salt.edit" template="/WEB-INF/views/app/salt/edit.jsp"/>
+	<definition name="oa.app.construction.update" template="/WEB-INF/views/app/construction/edit.jsp"/>
+	<definition name="oa.app.public.update" template="/WEB-INF/views/app/public/edit.jsp"/>
+	<definition name="oa.app.radiate.update" template="/WEB-INF/views/app/radiate/edit.jsp"/>
+	<definition name="oa.app.restaurant.update" template="/WEB-INF/views/app/restaurant/edit.jsp"/>
+	<definition name="oa.app.water.update" template="/WEB-INF/views/app/water/edit.jsp"/>
+	<definition name="oa.app.viewStatistics" template="/WEB-INF/views/statistics/app/view.jsp"/>
+
+	<definition name="task.supervise" template="/WEB-INF/views/oa/task/supervise.jsp"/>
+	<definition name="task.view" template="/WEB-INF/views/oa/task/view.jsp"/>
+	<definition name="task.manage.index" template="/WEB-INF/views/oa/task/manage/index.jsp"/>
+	<definition name="task.manage.edit" template="/WEB-INF/views/oa/task/manage/edit.jsp"/>
+	<definition name="task.mine.index" template="/WEB-INF/views/oa/task/mine/index.jsp"/>
+	<definition name="task.mine.result" template="/WEB-INF/views/oa/task/mine/result.jsp"/>
+	<definition name="task.query.list" template="/WEB-INF/views/oa/task/query/list.jsp"/>
+	<definition name="task.statistics.index" template="/WEB-INF/views/statistics/task/index.jsp"/>
+	<definition name="task.statistics.view" template="/WEB-INF/views/statistics/task/view.jsp"/>
+	
+	<definition name="case.accept.index" template="/WEB-INF/views/oa/case/accept/index.jsp"/>
+	<definition name="case.accept.edit" template="/WEB-INF/views/oa/case/accept/edit.jsp"/>
+	<definition name="case.accept.view" template="/WEB-INF/views/oa/case/accept/view.jsp"/>
+	
+	<definition name="case.regist.index" template="/WEB-INF/views/oa/case/regist/index.jsp"/>
+	<definition name="case.regist.edit" template="/WEB-INF/views/oa/case/regist/edit.jsp"/>
+	<definition name="case.regist.view" template="/WEB-INF/views/oa/case/regist/view.jsp"/>
+	
+	<definition name="case.investigate.edit" template="/WEB-INF/views/oa/case/investigate/edit.jsp"/>
+	<definition name="case.investigate.view" template="/WEB-INF/views/oa/case/investigate/view.jsp"/>
+		
+	<definition name="case.finish.edit" template="/WEB-INF/views/oa/case/finish/edit.jsp"/>
+	<definition name="case.finish.view" template="/WEB-INF/views/oa/case/finish/view.jsp"/>
+	
+	<definition name="case.punish.edit" template="/WEB-INF/views/oa/case/punish/edit.jsp"/>
+	<definition name="case.punish.view" template="/WEB-INF/views/oa/case/punish/view.jsp"/>
+	
+	<definition name="case.hear.edit" template="/WEB-INF/views/oa/case/hear/edit.jsp"/>
+	<definition name="case.hear.view" template="/WEB-INF/views/oa/case/hear/view.jsp"/>
+	
+	<definition name="case.collegial.edit" template="/WEB-INF/views/oa/case/collegial/edit.jsp"/>
+	<definition name="case.collegial.query" template="/WEB-INF/views/oa/case/collegial/query.jsp"/>
+	<definition name="case.collegial.view" template="/WEB-INF/views/oa/case/collegial/view.jsp"/>
+	
+	<definition name="case.report.index" template="/WEB-INF/views/oa/case/report/index.jsp"/>
+	<definition name="case.report.edit" template="/WEB-INF/views/oa/case/report/edit.jsp"/>
+	
+	<definition name="case.statistics.index" template="/WEB-INF/views/statistics/case/index.jsp"/>
+
+	<definition name="assess.index" template="/WEB-INF/views/oa/assess/index.jsp"/>
+	<definition name="assess.edit" template="/WEB-INF/views/oa/assess/edit.jsp"/>
+	
+	<definition name="assessBusiness.index" template="/WEB-INF/views/oa/assessBusiness/index.jsp"/>
+	<definition name="assessBusiness.majorEvents" template="/WEB-INF/views/oa/assessBusiness/majorEvents.jsp"/>
+	<definition name="assessBusiness.app" template="/WEB-INF/views/oa/assessBusiness/app.jsp"/>
+	<definition name="assessBusiness.allApp" template="/WEB-INF/views/oa/assessBusiness/allApp.jsp"/>
+	<definition name="assessBusiness.case" template="/WEB-INF/views/oa/assessBusiness/case.jsp"/>
+	<definition name="assessBusiness.emergency" template="/WEB-INF/views/oa/assessBusiness/emergency.jsp"/>
+	<definition name="assessBusiness.emergencyView" template="/WEB-INF/views/oa/assessBusiness/emergencyDetail.jsp"/>
+	<definition name="assessBusiness.viewApp" template="/WEB-INF/views/oa/assessBusiness/viewApp.jsp"/>
+	<definition name="assessBusiness.viewCase" template="/WEB-INF/views/oa/assessBusiness/viewCase.jsp"/>
+	<definition name="assessBusiness.setPoints" template="/WEB-INF/views/oa/assessBusiness/setPoints.jsp"/>
+
+	<definition name="records.index" template="/WEB-INF/views/oa/records/index.jsp"/>
+	<definition name="records.check" template="/WEB-INF/views/oa/records/view.jsp"/>
+	<definition name="records.select" template="/WEB-INF/views/oa/records/select.jsp"/>
+	
+	<definition name="mark.index" template="/WEB-INF/views/oa/mark/index.jsp"/>
+	<definition name="mark.edit" template="/WEB-INF/views/oa/mark/edit.jsp"/>
+	<definition name="mark.extraEdit" template="/WEB-INF/views/oa/mark/extraEdit.jsp"/>
+	<definition name="mark.view" template="/WEB-INF/views/oa/mark/view.jsp"/>
+	<definition name="mark.assess" template="/WEB-INF/views/oa/mark/assess.jsp"/>
+	
+	<!-- 通知管理 -->
+	<definition name="notice.index" template="/WEB-INF/views/oa/notice/index.jsp"/>
+	<definition name="notice.manage" template="/WEB-INF/views/oa/notice/manage.jsp"/>
+	<definition name="notice.setting" template="/WEB-INF/views/oa/notice/setting.jsp"/>
+	<definition name="notice.view" template="/WEB-INF/views/oa/notice/detail.jsp"/>
+	
+	<!-- 突发应急 -->
+	<definition name="oa.emergency.index" template="/WEB-INF/views/business/emergency/search/index.jsp"/>
+	<definition name="oa.emergency.view" template="/WEB-INF/views/business/emergency/search/detail.jsp"/>
+	<definition name="oa.emergency.add" template="/WEB-INF/views/business/emergency/register/add.jsp"/>
+	<definition name="oa.emergency.edit" template="/WEB-INF/views/business/emergency/register/edit.jsp"/>
+	<definition name="oa.emergency.handle" template="/WEB-INF/views/business/emergency/handle/detail.jsp"/>	
+	<definition name="oa.emergency.preplan.index" template="/WEB-INF/views/business/emergency/preplan/index.jsp"/>
+	<definition name="oa.emergency.preplan.add" template="/WEB-INF/views/business/emergency/preplan/add.jsp"/>
+	<definition name="oa.emergency.statistics.index" template="/WEB-INF/views/statistics/emergency/index.jsp"/>
+	<definition name="oa.emergency.countView" template="/WEB-INF/views/statistics/emergency/view.jsp"/>
+	
+	
+	<!-- 重大活动保障 -->
+	<definition name="oa.majorEvents.index" template="/WEB-INF/views/business/majorevents/search/index.jsp"/>
+	<definition name="oa.majorEvents.view" template="/WEB-INF/views/business/majorevents/search/detail.jsp"/>
+	<definition name="oa.majorEvents.add" template="/WEB-INF/views/business/majorevents/register/add.jsp"/>
+	<definition name="oa.majorEvents.handle" template="/WEB-INF/views/business/majorevents/handle/detail.jsp"/>	
+	<definition name="oa.majorEvents.statistics.index" template="/WEB-INF/views/statistics/majorevents/index.jsp"/>
+	<definition name="oa.majorEvents.preplan.index" template="/WEB-INF/views/business/majorevents/preplan/index.jsp"/>
+	<definition name="oa.majorEvents.preplan.add" template="/WEB-INF/views/business/majorevents/preplan/add.jsp"/>
+	<definition name="oa.majorEvents.countView" template="/WEB-INF/views/statistics/majorevents/view.jsp"/>
+	
+	<!-- 投诉举报 -->
+	<definition name="oa.complaints.index" template="/WEB-INF/views/business/complaints/index.jsp" />
+	<definition name="oa.complaints.add" template="/WEB-INF/views/business/complaints/add.jsp"/>
+	<definition name="oa.complaints.register.view" template="/WEB-INF/views/business/complaints/register/view.jsp"/>
+	<definition name="oa.complaints.register.edit" template="/WEB-INF/views/business/complaints/register/edit.jsp"/>
+	<definition name="oa.complaints.handle" template="/WEB-INF/views/business/complaints/handle/edit.jsp"/>
+	<definition name="oa.complaints.goBack" template="/WEB-INF/views/business/complaints/goBack/view.jsp"/>
+	<definition name="oa.complaints.transfer" template="/WEB-INF/views/business/complaints/transfer/view.jsp"/>
+	<definition name="oa.complaints.statistics.index" template="/WEB-INF/views/statistics/complaints/index.jsp"/>
+	<definition name="oa.complaints.countView" template="/WEB-INF/views/statistics/complaints/view.jsp"/>
+	<definition name="oa.complaints.handle.index" template="/WEB-INF/views/business/complaints/handle/index.jsp"/>
+	
+	<!-- 公文管理 -->
+	<definition name="docManage.index" template="/WEB-INF/views/oa/docManage/sentDoc/index.jsp"/>
+	<definition name="docManage.edit" template="/WEB-INF/views/oa/docManage/sentDoc/view.jsp"/>
+	<definition name="oa.docManage.add" template="/WEB-INF/views/oa/docManage/sentDoc/edit.jsp"/>
+	<definition name="receiverDocManage.index" template="/WEB-INF/views/oa/docManage/receiverDoc/index.jsp"/>
+	<definition name="receiverDocManage.edit" template="/WEB-INF/views/oa/docManage/receiverDoc/view.jsp"/>
+	
+	<!-- 知识管理  -->
+	<definition name="oa.knowledge.category.index" template="/WEB-INF/views/oa/knowledge/category/index.jsp"/>
+	<definition name="oa.knowledge.category.edit" template="/WEB-INF/views/oa/knowledge/category/edit.jsp"/>
+	<definition name="oa.knowledge.manage.index" template="/WEB-INF/views/oa/knowledge/manage/index.jsp"/>
+	<definition name="oa.knowledge.manage.edit" template="/WEB-INF/views/oa/knowledge/manage/edit.jsp"/>
+	<definition name="oa.knowledge.manage.view" template="/WEB-INF/views/oa/knowledge/manage/view.jsp"/>
+		
+	<!-- 打印 -->
+	<definition name="print.permit.a" template="/WEB-INF/views/oa/print/permit/a.jsp"/>
+	<definition name="print.permit.b" template="/WEB-INF/views/oa/print/permit/b.jsp"/>
+	<definition name="print.permit.c" template="/WEB-INF/views/oa/print/permit/c.jsp"/>
+	<definition name="print.permit.d" template="/WEB-INF/views/oa/print/permit/d.jsp"/>
+	<definition name="print.permit.e" template="/WEB-INF/views/oa/print/permit/e.jsp"/>
+	<definition name="print.permit.f" template="/WEB-INF/views/oa/print/permit/f.jsp"/>
+	<definition name="print.permit.g" template="/WEB-INF/views/oa/print/permit/g.jsp"/>
+	<definition name="print.permit.h" template="/WEB-INF/views/oa/print/permit/h.jsp"/>
+	<definition name="print.permit.i" template="/WEB-INF/views/oa/print/permit/i.jsp"/>
+	<definition name="print.permit.restaurant.c" template="/WEB-INF/views/oa/print/permit/restaurant/c.jsp"/>
+
+</tiles-definitions>

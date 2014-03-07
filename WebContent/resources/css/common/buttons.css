@@ -1,0 +1,280 @@
+/****************************************************
+*
+* 查询条件
+*  
+****************************************************/
+
+.button_reset {
+	border: none;
+	cursor: pointer;
+	width: 60px;
+	height: 30px;
+	margin: auto 3px;
+	background: url("../../images/buttons.png") 0 -60px no-repeat;
+}
+.button_reset:hover {
+	background: url("../../images/buttons.png") 0 -90px no-repeat;
+}
+.button_search {
+	border: none;
+	cursor: pointer;
+	width: 70px;
+	height: 30px;
+	margin: auto 3px;
+	background: url("../../images/buttons.png") 0 0 no-repeat;
+}
+.button_search:hover {
+	background: url("../../images/buttons.png") 0 -30px no-repeat;
+}
+.button_export {
+	border: none;
+	cursor: pointer;
+	width: 70px;
+	height: 30px;
+	margin: auto 3px;
+	background: url("../../images/buttons.png") 0 -180px no-repeat;
+}
+.button_export:hover {
+	background: url("../../images/buttons.png") 0 -210px no-repeat;
+}
+.button_submit {
+	border: none;
+	cursor: pointer;
+	width: 70px;
+	height: 30px;
+	margin: auto 3px;
+	background: url("../../images/buttons.png") 0 -270px no-repeat;
+}
+.button_submit:hover {
+	background: url("../../images/buttons.png") 0 -240px no-repeat;
+}
+
+/****************************************************
+*
+* 列表批量操作
+*  
+****************************************************/
+
+.button_add, .button_del_all, .button_import {
+	background-image: url("../../images/table-icon.png");
+	background-repeat: no-repeat;
+    padding: 0 0 0 24px;
+    line-height: 40px;
+    height: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555555;
+}
+.button_add {
+	background-position: 0 0;
+}
+.button_del_all {
+	background-position: 0 -18px;
+}
+.button_import {
+	background-position: 0 -397px;
+}
+
+/* 立案、上报、权限设定、重发、登记、标记已读、撤销、发放、备案、受理、拒绝、角色设定 */
+.button_start_case, .button_report, .button_power_set, .button_resend, .button_regist, .button_mark_read, 
+.button_cancel, .button_grant, .button_record, .button_accept, .button_refuse, .button_role_set, .button_sync,
+.button_save {
+	background-image: url("../../images/table-icon2.png");
+	background-repeat: no-repeat;
+    padding: 0 0 0 24px;
+    line-height: 40px;
+    height: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555555;
+    cursor: pointer;
+}
+.button_start_case {
+	background-position: 0 -13px;
+}
+.button_report {
+	background-position: 0 -35px;
+}
+.button_power_set {
+	background-position: 0 -58px;
+}
+.button_resend {
+	background-position: 0 -82px;
+}
+.button_regist {
+	background-position: 0 -104px;
+}
+.button_mark_read {
+	background-position: 0 -128px;
+}
+.button_cancel {
+	background-position: 0 -154px;
+}
+.button_grant {
+	background-position: 0 -174px;
+}
+.button_record {
+	background-position: 0 -199px;
+}
+.button_accept {
+	background-position: 0 -222px;
+}
+.button_refuse {
+	background-position: 0 -243px;
+}
+.button_role_set {
+	background-position: 0 -270px;
+}
+.button_sync {
+	background-position: 0 -1084px;
+}
+.button_save {
+	background-position: 0 -1112px;
+}
+
+/****************************************************
+*
+* 列表单一操作
+*  
+****************************************************/
+
+.option_edit, .option_procedure, .option_delete, .option_view, .option_stop, .option_print {
+	background-image: url("../../images/table-icon.png");
+	background-repeat: no-repeat;
+    height: 23px;
+    width: 23px;
+    text-decoration: none;
+    color: #555555;
+    display: inline-block;
+    cursor: pointer;
+}
+.option_edit {
+	background-position: 0 -64px;
+}
+.option_procedure {
+	background-position: 0 -552px;
+}
+.option_delete {
+	background-position: 0 -136px;
+}
+.option_view {
+	background-position: 0 -88px;
+}
+.option_stop {
+	background-position: 0 -418px;
+}
+.option_print {
+	background-position: 0 -112px;
+}
+
+/* 立案、合议、听证、记录、中止、查看审批进度、查看待审批业务、进入审批、停用、分配、处理、退回、移交、领取、执行、撤销、发放、上报、备案、注销、受理、拒绝、密码重置 */
+.option_start_case, .option_collegial, .option_hearing, .option_record, .option_pause, 
+.option_view_process_status, .option_view_business, .option_do_approve, .option_assign, 
+.option_process, .option_rollback, .option_handover, .option_gain_task, .option_execute,
+.option_cancel, .option_grant, .option_report, .option_record, .option_off, .option_accept, 
+.option_refuse, .option_accept_doc, .option_refuse_doc, .option_reset_password {
+	background-image: url("../../images/table-icon2.png");
+	background-repeat: no-repeat;
+    height: 23px;
+    width: 23px;
+    text-decoration: none;
+    color: #555555;
+    display: inline-block;
+    cursor: pointer;
+}
+.option_start_case {
+	background-position: 0 -10px;
+}
+.option_collegial {
+	background-position: 0 -305px;
+}
+.option_hearing {
+	background-position: 0 -337px;
+}
+.option_record {
+	background-position: 0 -368px;
+}
+.option_pause {
+	background-position: 0 -399px;
+}
+.option_view_process_status {
+	background-position: 0 -429px;
+}
+.option_view_business {
+	background-position: 0 -457px;
+}
+.option_do_approve {
+	background-position: 0 -487px;
+}
+.option_assign {
+	background-position: 0 -548px;
+}
+.option_process {
+	background-position: 0 -578px;
+}
+.option_rollback {
+	background-position: 0 -607px;
+}
+.option_handover {
+	background-position: 0 -638px;
+}
+.option_gain_task {
+	background-position: 0 -668px;
+}
+.option_execute {
+	background-position: 0 -904px;
+}
+.option_cancel {
+	background-position: 0 -694px;
+}
+.option_grant {
+	background-position: 0 -722px;
+}
+.option_report {
+	background-position: 0 -760px;
+}
+.option_record {
+	background-position: 0 -790px;
+}
+.option_off {
+	background-position: 0 -934px;
+}
+.option_accept {
+	background-position: 0 -818px;
+}
+.option_refuse {
+	background-position: 0 -848px;
+}
+.option_accept_doc {
+	background-position: 0 -1025px;
+}
+.option_refuse_doc {
+	background-position: 0 -1054px;
+}
+.option_reset_password {
+	background-position: 0 -875px;
+}
+
+
+/****************************************************
+*
+* 其他
+*  
+****************************************************/
+
+.option_add, .option_del {
+	background-image: url("../../images/table-icon.png");
+	background-repeat: no-repeat;
+    padding: 0 0 2px 24px;
+    line-height: 40px;
+    height: 20px;
+    text-decoration: none;
+    color: #555555;
+    cursor: pointer;
+}
+.option_add {
+	background-position: 0 0;
+}
+.option_del {
+	background-position: 0 -18px;
+}

@@ -1,0 +1,38 @@
+.menu_sub_group_focus, .menu_sub_group {
+	height: 28px;
+	width: 186px;
+	line-height: 28px;
+    padding-left: 40px;
+}
+.menu_sub_group_focus {
+	background: url("../../images/menu_sub_group_focus.png") no-repeat top left;
+	color: #333333;
+	cursor: default;
+}
+.menu_sub_group {
+	background: url("../../images/menu_sub_group.png") no-repeat top left;
+	color: #EEEEEE;
+	cursor: pointer;
+}
+.menu_items_focus {
+	background-color: #417EB7;
+	overflow-y: auto;
+}
+.menu_items {
+	display: none;
+}
+.menu_item {
+    text-align: center;
+    margin: 20px auto;
+}
+.menu_item a, .menu_item a:link, .menu_item a:visited {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.menu_item a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.menu_item a img {
+	margin-bottom: 5px;
+}
