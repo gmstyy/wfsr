@@ -4,7 +4,7 @@ CREATE TABLE `config` (
   `value` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
-
+;
 CREATE TABLE `food_list` (
   `id` int(10) NOT NULL,
   `name` varchar(50) default NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `food_list` (
   `remark` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
-
+;
 CREATE TABLE `menu` (
   `id` int(10) NOT NULL,
   `parent_id` int(10) default NULL,
@@ -25,7 +25,7 @@ CREATE TABLE `menu` (
   `image_path` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
-
+;
 CREATE TABLE `news` (
   `id` int(10) NOT NULL,
   `menu_id` int(10) default NULL,
@@ -35,4 +35,4 @@ CREATE TABLE `news` (
   `date` date default NULL,
   `sort_no` int(3) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

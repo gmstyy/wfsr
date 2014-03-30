@@ -1,364 +1,64 @@
-body {
-	background-color: #2383BD;
-	margin: 3px;
-	overflow: hidden;
-	font-size: 12px;
-}
-.wrapper {
-	
-}
-.top_left {
-	background: url("../../images/top_left.png") no-repeat top left;
-	height: 15px;
-	width: 100%;
-}
-.top_right {
-	background: url("../../images/top_right.png") no-repeat top right;
-	height: 15px;
-	width: 100%;
-}
-.top_middle {
-	background: url("../../images/top_middle.png") repeat-x top left;
-	height: 15px;
-	margin-left: 15px;
-}
-.bottom_left {
-	background: url("../../images/bottom_left.png") no-repeat top left;
-	height: 15px;
-	width: 100%;
-}
-.bottom_right {
-	background: url("../../images/bottom_right.png") no-repeat top right;
-	height: 15px;
-	width: 100%;
-}
-.bottom_middle {
-	background: url("../../images/bottom_middle.png") repeat-x top left;
-	height: 15px;
-	margin-left: 8px;
-}
-.center_left {
-	background: url("../../images/left_middle.png") repeat-y top left;
-	width: 100%;
-}
-.center_right {
-	background: url("../../images/right_middle.png") repeat-y top right;
-	width: 100%;
-}
-.content_wrapper {
-	width: 100%;
-	margin-left: 15px;
-	background: #EEEEEE;
-}
-.header {
-	height: 68px;
-	overflow: hidden;
-	font-size: 12px;
-}
-.header .logo {
-	background: url("../../images/logo.png") no-repeat 16px 0;
-	height: 53px;
-	width: 100%;
-	margin: 4px 0;
-}
-.header .title {
-	background: url("../../images/title.png") no-repeat 80px 13px;
-	height: 53px;
-    line-height: 53px;
-    width: 100%;
-}
-.header .options {
-	float: right;
-    height: 30px;
-    margin: 12px 6px;
-}
-.header .options .opt {
-	float: right;
-	margin: auto 4px;
-	display: block;
-}
-.header .options .opt div {
-	float: right;
-}
-.header .options .opt .left {
-	background: url("../../images/top-menu.png") no-repeat 0 -252px;
-	height: 28px;
-	width: 5px;
-}
-.header .options .opt .middle {
-	background: url("../../images/top-menu.png") repeat-x 0 -280px;
-	height: 28px;
-	color: #555555;
-    line-height: 28px;
-	text-align: center;
-	cursor: pointer;
-}
-.header .options .opt .department {
-	width: 280px;
-	text-align: center;
-}
-.header .options .opt .welcome {
-	width: 150px;
-	text-align: left;
-}
-.header .options .opt .welcome * {
-	float: left;
-}
-.header .options .opt .welcome .user_icon {
-	background: url("../../images/top_user.png") no-repeat 0 0;
-	height: 16px;
-	width: 16px;
-	margin: 5px;
-}
-.header .options .opt .logoff {
-	width: 45px;
-}
-.header .options .opt .quit {
-	width: 42px;
-	color: #FF0000;
-}
-.header .options .opt .logoff:hover, .header .options .opt .welcome:hover, .header .options .opt .department:hover {
-	color: #2383BD;
-}
-.header .options .opt .right {
-	background: url("../../images/top-menu.png") no-repeat 0 -308px;
-	height: 28px;
-	width: 5px;
-}
-.header:after {
-	clear: both;
-}
-.navigator {
-	background-color: #2383BD;
-	height: 40px;
-	overflow: hidden;
-	margin: auto -7.5px auto -6px;
-	font-size: 12px;
-}
-.navigator .menu_group {
-	float: left;
-    height: 40px;
-    overflow: hidden;
-    padding-left: 10px;
-}
-.navigator .menu_item {
-	float: left;
-	margin: 6px 8px;
-	width: 75px;
-}
-.navigator .menu_item div {
-}
-.navigator .menu_item .left {
-	background: url("../../images/top-menu.png") no-repeat 0 -84px;
-	height: 28px;
-	width: 5px;
-	float: right;
-}
-.navigator .menu_item .middle {
-	background: url("../../images/top-menu.png") repeat-x 0 -112px;
-	height: 28px;
-	width: 65px;
-    line-height: 30px;
-	color: #EEEEEE;
-	font-weight: normal;
-	text-align: center;
-	cursor: pointer;
-	float: right;
-}
-.navigator .menu_item .middle:hover {
-	color: #555555;
-}
-.navigator .focus_item .middle:hover {
-	color: #FFFFFF;
-	cursor: default;
-}
-.navigator .menu_item .right {
-	background: url("../../images/top-menu.png") no-repeat 0 -140px;
-	height: 28px;
-	width: 5px;
-	float: right;
-}
-.navigator .focus_item .left {
-	background: url("../../images/top-menu.png") no-repeat 0 -168px;
-}
-.navigator .focus_item .middle {
-	background: url("../../images/top-menu.png") repeat-x 0 -196px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.navigator .focus_item .right {
-	background: url("../../images/top-menu.png") no-repeat 0 -224px;
-}
-.navigator .menu_helper {
-	float: right;
-	line-height: 40px;
-	width: 40px;
-	text-align: center;
-}
-.navigator .menu_helper a {
-	float: left;
-	cursor: pointer;
-	height: 40px;
-    width: 20px;
-    color: #FFFFFF;
-}
-.navigator .menu_helper a:hover {
-}
 
-.navigator .datetime {
-	float: right;
-	margin: 6px 8px;
+.menu {
+	position:relative;
+	top: 15px;
+	left:300px;
 }
-.navigator .datetime div {
-	float: right;
-}
-.navigator .datetime .left {
-	background: url("../../images/top-menu.png") no-repeat 0 -336px;
-	height: 28px;
-	width: 5px;
-	float: right;
-}
-.navigator .datetime .middle {
-	background: url("../../images/top-menu.png") repeat-x 0 -364px;
-	height: 28px;
-	width: 200px;
-    line-height: 30px;
-	color: #555555;
-	text-align: center;
-	float: right;
-	cursor: pointer;
-}
-.navigator .datetime .middle:hover {
-	color: #2383BD;
-}
-.navigator .datetime .right {
-	background: url("../../images/top-menu.png") no-repeat 0 -392px;
-	height: 28px;
-	width: 5px;
-	float: right;
-}
-.navigator:after {
-	clear: both;
-}
-.content {
-	text-align: left;
-	margin: auto;
-	font-size: 12px;
-}
-.content .menu_container {
-	float: left;
-	width: 186px;
-	margin-left: -6px;
-}
-.content .menu_container .menu_group {
-	background-color: #417EB7;
-	border: Solid 2px #417EB7;
-	margin: 1px;
-	overflow: hidden;
-}
-.content .spliter_container {
-	float: left;
-	background-color: #F1F1F1;
-	width: 16px;
-}
-.content .spliter_container .spliter {
-	background: url("../../images/hide.gif") no-repeat center center;
-	margin: auto;
-	height: 42px;
-	width: 10px;
-	cursor: pointer;
-	float: left;
-}
-.content .content_title {
-	float: left;
-	height: 32px;
-	overflow: hidden;
-}
-.content .content_title .crumb {
-	background: url("../../images/crumbs.png") no-repeat 0 0;
-	height: 16px;
-	width: 16px;
-	margin: 8px auto;
-	float: left;
-}
-.content .content_title .current_page {
-	color: #555555;
-	margin: 10px 4px 6px;
-	float: left;
-}
-.content .page_container {
-	float: left;
-	overflow-y: auto;
-	overflow-x: hidden;
-	background-color: #E5E5E5;
-}
-.content #page_iframe {
-	border: none;
-}
-.content:after {
-	clear: both;
-}
-#waitingContainer {
-	
-}
-#waitingContainer .waiting {
-	background: url("../../images/loading.gif") no-repeat center center;
-	height: 60px;
-	width: 300px;
-}
-fieldset {
-	text-align: left;
-}
-fieldset:after {
-	clear: left;
-}
-fieldset legend {
-	text-align: left;
-}
-.dicCheckbox {
-	float: left;
-}
-.checkListItem {
-	float: left;
-}
-.tab_group {
-	width: 100%;
-}
-.tab_group ul {
-	background-color: #CCCCCC;
-	border-collapse: collapse;
-	height: 36px;
-    line-height: 36px;
-    margin: 10px;
-    padding: 0;
-}
-.tab_group ul:after {
-	clear: left;
-}
-.tab_group li {
-	cursor: pointer;
-	display: block;
-    float: left;
-    font-weight: normal;
-	height: 30px;
-    line-height: 30px;
-    margin: 3px;
-    width: 120px;
-    text-decoration: none;
+.menu li {
+	background-image:url(../../images/index/nav_abg.png);
+	#background: url(../../images/index/nav_abg.png) no-repeat scroll right center transparent;
+	float:left;
+	list-style: none outside none;
+	width: 83px;
+	display: inline-block;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
     text-align: center;
+    width: 83px;
+	margin-left:50px;
 }
-.tab_group .tab_item {
-	background: #E6E6E6;
-	color: #555555;
+.logo {
+	position: absolute;
+   # float: left;
+    height: 70px;
+   # padding-left: 8px;
+   # padding-top: 3px;
+    width: 202px;
+	background-image:url(../../images/index/logo.jpg)
 }
-.tab_group .focus_tab {
-	background-color: #FFFFFF;
-	cursor: text;
-	color: #212121;
-    font-weight: bold;
-}
-.date_input {
-	background: url("../../images/table-icon.png") no-repeat right -160px;
-	width: 105px;
-}
+.best{
 
+	top:376px;
+	left: 437px;
+	background-image:url(../../images/index/show_bg.png);
+	width:341px;
+	height:314px;
+
+}
+.info{
+	top:378px;
+	left: 94px;
+	background-image:url(../../images/index/shengdan_ad.png);
+	width:278px;
+	height:286px;
+}
+.move_up{
+	position:absolute;
+	z-index:100;
+}
+.content{
+	background-image:url(../../images/index/bodypic7.jpg);
+	height:80%;
+	width:100%;
+	position:absolute;
+	#left: 13px;
+	top: 94px;
+}
+.footer{
+	position:fixed;
+	top:92%;
+	width: 100%;
+	z-index:101;
+	background-color:#FF0;
+}

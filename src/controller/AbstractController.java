@@ -1,18 +1,25 @@
 
 package controller;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Properties;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.MessageSource;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.support.PropertiesLoaderUtils;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,8 +33,14 @@ import com.founder.fasf.service.IGenericService;
 import com.founder.fasf.util.ObjectUtil;
 
 public abstract class AbstractController {
-//	@Resource
-	private IGenericService  genericService;
+
+	@Resource
+	protected IGenericService genericService;
+	
+	protected HttpServletRequest request;
+
+	protected HttpServletResponse response;
+
 	protected ModelAndView mav;
 
 	protected Page page;
@@ -41,6 +54,28 @@ public abstract class AbstractController {
 	protected MessageSource messageSource;
 
 	protected Log log = LogFactory.getLog(this.getClass());
+
+
+	protected boolean checkEntity(Object obj) {
+		return true;
+	}
+
+
+	protected String getMessage(String code, Object... args) throws IOException {
+		org.springframework.core.io.Resource resource = new ClassPathResource("/application.properties");
+		Properties props = PropertiesLoaderUtils.loadProperties(resource);
+		return messageSource.getMessage(code, args, Locale.getDefault());
+	}
+
+	protected Object getSessionObj(String objName) {
+		return request.getSession().getAttribute(objName);
+	}
+
+	protected void setSessionObj(String objName, Object obj) {
+		request.getSession().setAttribute(objName, obj);
+		// RequestContextHolder.currentRequestAttributes().setAttribute(objName,
+		// obj, RequestAttributes.SCOPE_SESSION);
+	}
 
 
 	public Criteria getCriteria(Map<String, String[]> map, String... parm) {
@@ -137,6 +172,22 @@ public abstract class AbstractController {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		dateFormat.setLenient(false);
 		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+	}
+
+	public HttpServletRequest getRequest() {
+		return request;
+	}
+
+	public void setRequest(HttpServletRequest request) {
+		this.request = request;
+	}
+
+	public HttpServletResponse getResponse() {
+		return response;
+	}
+
+	public void setResponse(HttpServletResponse response) {
+		this.response = response;
 	}
 
 	public ModelAndView getMav() {
