@@ -9,8 +9,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SYSTEM_CONFIG")
-@SequenceGenerator(name = "SEQ_SYSTEM_CONFIG")
+@Table(name = "CONFIG")
+@SequenceGenerator(name = "SEQ_CONFIG")
 public class Config implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -20,9 +20,9 @@ public class Config implements Serializable {
 	@Id
 	@Column(name = "ID", columnDefinition = "NUMBER|ID|", length = 11, nullable = false)
 	private Integer id;
-	@Column(name = "KEY", columnDefinition = "NVARCHAR2|类别|", length = 3, nullable = true)
+	@Column(name = "CONFIG_KEY", columnDefinition = "NVARCHAR2|类别|", length = 3, nullable = true)
 	private String key;
-	@Column(name = "VALUE", columnDefinition = "NVARCHAR2|参数值|", length = 50, nullable = true)
+	@Column(name = "CONFIG_VALUE", columnDefinition = "NVARCHAR2|参数值|", length = 50, nullable = true)
 	private String value;
 
 	public Integer getId() {

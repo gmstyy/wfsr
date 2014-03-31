@@ -9,7 +9,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "APPROVE")
+@Table(name = "NEWS")
 @SequenceGenerator(name = "SEQ_APPROVE")
 public class News implements Serializable {
 

@@ -52,7 +52,7 @@
 
 	<error-page>
 		<error-code>404</error-code>
-		<location>/login/noFounde</location>
+		<location>/access/noFounde</location>
 	</error-page>
 	<welcome-file-list>
 		<welcome-file>access/index</welcome-file>

@@ -9,7 +9,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SYSTEM_CONFIG")
+@Table(name = "FOOD_LIST")
 @SequenceGenerator(name = "SEQ_SYSTEM_CONFIG")
 public class FoodList implements Serializable {
 

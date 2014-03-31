@@ -29,4 +29,11 @@ public class LoginController extends AbstractController{
 		mav.addObject("menuList", menuList);
 		return mav;
 	}
+	@RequestMapping("/noFounde")
+	public ModelAndView noFounde(){
+		mav.setViewName("error");
+		mav.addObject("code", "404");
+		mav.addObject("msg", "未找到页面");
+		return mav;
+	}
 }
