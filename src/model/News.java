@@ -20,7 +20,7 @@ public class News implements Serializable {
 	public static final String TITLE = "currentNodeId";
 	public static final String CONTENT = "remark";
 	public static final String DATE = "categoryCode";
-	public static final String SORT_NO = "businessCode";
+	public static final String SORT_NO = "sortNo";
 
 	@Id
 	@Column(name = "ID", columnDefinition = "NUMBER|ID|", length = 11, nullable = false)

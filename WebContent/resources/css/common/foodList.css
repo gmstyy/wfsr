@@ -1,0 +1,150 @@
+.side_nav {
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 430px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 58px;
+	position: absolute;
+}
+
+.side_nav li {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 32px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	text-alignrightwidth: 112px;
+}
+
+.side_nav ul li a {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	background: url(../../images/foodList/a_bg.png) no-repeat right bottom;
+	padding: 0 25px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.side_nav ul li a:hover,.side_nav ul li a.hover {
+	background: url(../../images/foodList/a_bg.png) no-repeat right top;
+}
+
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px; :
+	wk_inc .css: 16.content 0px;
+	min-height: 330px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	position: relative;
+	width: 1095px;
+	z-index: 0;
+}
+
+.meeu_mian {
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 30px; :
+	wk_inc .css: 84.meeu_mian 30px;
+	min-height: 500px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 120px;
+	width: 970px;
+}
+
+.masonry {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 882px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	position: relative;
+	right: -7px;
+}
+
+.item {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	left: 0px;
+	margin-bottom: 6px;
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 6px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	position: relative;
+	top: 0px;
+	width: 230px;
+}
+
+.radius_5_hb a {
+	color: #FFF;
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 25.2px;
+	outline-color: #FFF;
+	outline-style: none;
+	outline-width: 0px;
+	padding-right: 12px;
+	text-alignrighttext-decoration: none;
+	-moz-text-decoration-color: #FFF;
+	-moz-text-decoration-line: none;
+	-moz-text-decoration-style: solid;
+}
+
+.radius_5_hb {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #EB3939;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 28.8px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px; :
+	public .css: 3 body 0px; :
+	public .css: 3 dl 0px; :
+	public .css: 3 dd 0px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 3px;
+	position: relative;
+	text-alignrightwidth: 230px;
+}

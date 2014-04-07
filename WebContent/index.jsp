@@ -11,7 +11,7 @@
 <div class="logo"></div>
 <ul class="menu">
 	<c:forEach var="menu" items="${menuList}" varStatus="status">
-		<li><a href="${menu.url}" >${menu.name}</a></li>
+		<li><a href="${pageContext.request.contextPath}/${menu.url}" >${menu.name}</a></li>
 	</c:forEach>
 </ul>
 <div class="content"></div>

@@ -1,7 +1,7 @@
 CREATE TABLE `config` (
   `id` int(10) NOT NULL,
-  `key` varchar(100) default NULL,
-  `value` varchar(200) default NULL,
+  `config_key` varchar(100) default NULL,
+  `config_value` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ;
@@ -12,6 +12,7 @@ CREATE TABLE `food_list` (
   `menu_id` varchar(200) default NULL,
   `detail_path` varchar(200) default NULL,
   `remark` varchar(200) default NULL,
+  `sort_no` int(10) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ;

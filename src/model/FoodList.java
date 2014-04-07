@@ -19,8 +19,8 @@ public class FoodList implements Serializable {
 	public static final String PATH = "path";
 	public static final String MENU_ID = "menuId";
 	public static final String DETAIL_PATH = "detailPath";
-	public static final String KEY = "key";
 	public static final String REMARK = "remark";
+	public static final String SORT_NO = "sortNo";
 	@Id
 	@Column(name = "ID", columnDefinition = "NUMBER|ID|", length = 11, nullable = false)
 	private Integer id;
@@ -34,6 +34,9 @@ public class FoodList implements Serializable {
 	private String detailPath;
 	@Column(name = "REMARK", columnDefinition = "NVARCHAR2|参数值|", length = 50, nullable = true)
 	private String remark;
+	@Column(name = "SORT_NO", columnDefinition = "NUMBER|当前节点ID|", length = 11, nullable = true)
+	private Integer sortNo;
+
 	public Integer getId() {
 		return id;
 	}
@@ -69,6 +72,12 @@ public class FoodList implements Serializable {
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+	public Integer getSortNo() {
+		return sortNo;
+	}
+	public void setSortNo(Integer sortNo) {
+		this.sortNo = sortNo;
 	}
 
 

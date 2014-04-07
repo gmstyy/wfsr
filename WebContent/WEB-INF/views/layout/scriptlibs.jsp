@@ -25,12 +25,12 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/tab.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/district.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/common/orgTree.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/mxGraph/js/mxClient.js"></script>
+<%-- <script type="text/javascript" src="${pageContext.request.contextPath}/mxGraph/js/mxClient.js"></script> --%>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/dialog/drag.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/dialog/dialog.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/views/common/business.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/highcharts.js"></script>
+<%-- <script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/highcharts.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/exporting.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/grid.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/drilldown.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/highcharts/drilldown.js"></script> --%>

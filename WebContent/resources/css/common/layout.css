@@ -1,64 +1,114 @@
-
 .menu {
-	position:relative;
+	position: relative;
 	top: 15px;
-	left:300px;
+	left: 300px;
 }
+
 .menu li {
-	background-image:url(../../images/index/nav_abg.png);
-	#background: url(../../images/index/nav_abg.png) no-repeat scroll right center transparent;
-	float:left;
+	background-image: url(../../images/index/nav_abg.png); #
+	background: url(../../images/index/nav_abg.png) no-repeat scroll right
+		center transparent;
+	float: left;
 	list-style: none outside none;
 	width: 83px;
 	display: inline-block;
-    font-size: 14px;
-    height: 27px;
-    line-height: 27px;
-    text-align: center;
-    width: 83px;
-	margin-left:50px;
+	font-size: 14px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	width: 83px;
+	margin-left: 50px;
 }
+
+.menu li a {
+	text-decoration: none;
+	color: wheat;
+}
+
 .logo {
-	position: absolute;
-   # float: left;
-    height: 70px;
-   # padding-left: 8px;
-   # padding-top: 3px;
-    width: 202px;
-	background-image:url(../../images/index/logo.jpg)
+	position: absolute; #
+	float: left;
+	height: 70px; #
+	padding-left: 8px; #
+	padding-top: 3px;
+	width: 202px;
+	background-image: url(../../images/index/logo.jpg)
 }
-.best{
 
-	top:376px;
+.best {
+	top: 376px;
 	left: 437px;
-	background-image:url(../../images/index/show_bg.png);
-	width:341px;
-	height:314px;
+	background-image: url(../../images/index/show_bg.png);
+	width: 341px;
+	height: 314px;
+}
 
-}
-.info{
-	top:378px;
+.info {
+	top: 378px;
 	left: 94px;
-	background-image:url(../../images/index/shengdan_ad.png);
-	width:278px;
-	height:286px;
+	background-image: url(../../images/index/shengdan_ad.png);
+	width: 278px;
+	height: 286px;
 }
-.move_up{
-	position:absolute;
-	z-index:100;
+
+.move_up {
+	position: absolute;
+	z-index: 100;
 }
-.content{
-	background-image:url(../../images/index/bodypic7.jpg);
-	height:80%;
-	width:100%;
-	position:absolute;
-	#left: 13px;
+
+.content {
+	background-image: url(../../images/index/bodypic7.jpg);
+	height: 80%;
+	width: 100%;
+	position: absolute; #
+	left: 13px;
 	top: 94px;
 }
-.footer{
-	position:fixed;
-	top:92%;
+
+.footer {
+	position: fixed;
+	top: 92%;
 	width: 100%;
-	z-index:101;
-	background-color:#FF0;
+	z-index: 101;
+	background-color: #FF0;
+}
+
+.header {
+	font-family: Arial, Helvetica, sans-serif;
+	#height: 165px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	position: relative;
+	width: 1095px;
+	z-index: 2;
+}
+
+body {
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-color: transparent;
+	background-image:
+		url('http://www.haidilao.com/statics/images/body_pic2.jpg');
+	background-origin: padding-box;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	min-width: 1095px;
+	outline-color: #000;
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
 }

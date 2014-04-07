@@ -25,8 +25,8 @@ public class LoginController extends AbstractController{
 		for(Entry<String, Config> en:configMap.entrySet()){
 			mav.addObject(en.getKey(), en.getValue());
 		}
-		List<Menu> menuList=genericService.getList(Menu.class, new Criteria(Menu.MENU_LEVEL, 1), new Order(Menu.SORT_NO));
-		mav.addObject("menuList", menuList);
+		List<Menu> topMenuList=genericService.getList(Menu.class, new Criteria(Menu.MENU_LEVEL, 1), new Order(Menu.SORT_NO));
+		mav.addObject("topMenuList", topMenuList);
 		return mav;
 	}
 	@RequestMapping("/noFounde")
