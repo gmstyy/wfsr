@@ -1,0 +1,6 @@
+1	0	1	首页	access/index	1	
+2	0	1	菜品	foodList/index	2	
+3	0	1	关于我们	aboutUs	3	
+4	0	1	诚聘英才	joinUs	4	
+5	2	2	新品体验	foodList/index?menuId=5	1	
+6	2	2	锅底类	foodList/index?menuId=6	2	
